@@ -1,0 +1,418 @@
+html {
+    --accent-color: 26,115,232;
+}
+hr {
+    border: 0px;
+    background-color: #dadce0;
+    height: 1px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.md-button-negative {
+    border-radius: 4px;
+    outline: 0;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 1px solid #dadce0;
+    background-color: transparent;
+    color: rgb(var(--accent-color));
+    margin-inline-start: 4px;
+    margin-inline-end: 4px;
+    flex-shrink: 0;
+    font-weight: 500;
+    transition: ease all 0.2s;
+    user-select: none;
+    font-size: 14px;
+}
+.md-button-negative:hover {
+    background-color: rgba(var(--accent-color),0.04);
+    border-color: rgba(var(--accent-color),0.16);
+}
+.md-button-negative:active {
+    background-color: rgba(var(--accent-color),0.16);
+    border-color: rgba(var(--accent-color),0.16);
+    box-shadow: 0 1px 3px 0 rgba(60,64,67,0.2),
+    0 3px 8px 2px rgba(60,64,67,0.15);
+}
+.md-button-negative:disabled {
+    color: rgba(0,0,0,0.37);
+    cursor: default;
+}
+.md-button-negative:disabled:hover {
+    background-color: transparent;
+    border-color: #dadce0;
+}
+.md-button-positive {
+    border-radius: 4px;
+    outline: 0;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: rgb(var(--accent-color));
+    color: white;
+    margin-inline-start: 4px;
+    margin-inline-end: 4px;
+    flex-shrink: 0;
+    font-weight: 500;
+    transition: ease all 0.2s;
+    user-select: none;
+    font-size: 14px;
+}
+.md-button-positive:hover {
+    background-color: rgba(var(--accent-color),0.8);
+}
+.md-button-positive:active {
+    background-color: rgba(var(--accent-color),0.5);
+    box-shadow: 0 1px 3px 0 rgba(var(--accent-color),0.2),
+    0 3px 8px 2px rgba(var(--accent-color),0.15);
+}
+.md-button-positive:disabled {
+    background-color: rgba(0,0,0,0.37);
+    cursor: default;
+}
+.md-button-positive:disabled:hover {
+    background-color: rgba(0,0,0,0.37);
+    border-color: transparent;
+}
+.md-button-negative-noborder {
+    border-radius: 4px;
+    outline: 0;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: #5f6368;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    flex-shrink: 0;
+    font-weight: 500;
+    transition: ease all 0.2s;
+    user-select: none;
+    font-size: 14px;
+}
+.md-button-negative-noborder:hover {
+    background-color: rgba(95,99,104,0.04);
+}
+.md-button-negative-noborder:active {
+    background-color: rgba(95,99,104,0.16);
+}
+.md-button-negative-noborder:disabled {
+    color: rgba(0,0,0,0.37);
+    cursor: default;
+}
+.md-button-negative-noborder:disabled:hover {
+    background-color: transparent;
+}
+.md-button-positive-noborder {
+    border-radius: 4px;
+    outline: 0;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: rgb(var(--accent-color));
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    flex-shrink: 0;
+    font-weight: 500;
+    transition: ease all 0.2s;
+    user-select: none;
+    font-size: 14px;
+}
+.md-button-positive-noborder:hover {
+    background-color: rgba(var(--accent-color),0.04);
+}
+.md-button-positive-noborder:active {
+    background-color: rgba(var(--accent-color),0.16);
+}
+.md-button-positive-noborder:disabled {
+    color: rgba(0,0,0,0.37);
+    cursor: default;
+}
+.md-button-positive-noborder:disabled:hover {
+    background-color: transparent;
+}
+.md-button-negative-round {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    outline: 0;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: #5f6368;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    flex-shrink: 0;
+    font-weight: 500;
+    transition: ease all 0.2s;
+    user-select: none;
+    font-size: 14px;
+}
+.md-button-negative-round:hover {
+    background-color: rgba(95,99,104,0.04);
+}
+.md-button-negative-round:active {
+    background-color: rgba(95,99,104,0.16);
+}
+.md-button-negative-round:disabled {
+    color: rgba(0,0,0,0.37);
+    cursor: default;
+}
+.md-button-negative-round:disabled:hover {
+    background-color: transparent;
+}
+.md-button-positive-round {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    outline: 0;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: rgb(var(--accent-color));
+    color: white;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    flex-shrink: 0;
+    font-weight: 500;
+    transition: ease all 0.2s;
+    user-select: none;
+    font-size: 14px;
+}
+.md-button-positive-round:hover {
+    background-color: rgba(var(--accent-color),0.8);
+}
+.md-button-positive-round:active {
+    background-color: rgba(var(--accent-color),0.5);
+    box-shadow: 0 1px 3px 0 rgba(var(--accent-color),0.2),
+    0 3px 8px 2px rgba(var(--accent-color),0.15);
+}
+.md-button-positive-round:disabled {
+    background-color: rgba(0,0,0,0.37);
+    cursor: default;
+}
+.md-button-positive-round:disabled:hover {
+    background-color: rgba(0,0,0,0.37);
+    border-color: transparent;
+}
+/*https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
+.md-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    cursor: pointer;
+    user-select: none;
+    margin-inline-start: 4px;
+    margin-inline-end: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+}
+.md-checkbox:after {
+    height: 100px;
+    width: 100px;
+    background: rgb(var(--accent-color));
+    border: rgb(var(--accent-color));
+}
+.md-checkbox input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+.md-checkmark {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    background-color: transparent;
+    border: 2px solid #5f6368;
+    border-radius: 4px;
+    transition: ease 0.2s all;
+}
+.md-checkmark:before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    display: block;
+    left: -5px;
+    top: -5px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    transition: ease 0.2s all;
+}
+.md-checkbox:hover .md-checkmark:before {
+      background-color: rgba(var(--accent-color),0.12);
+      left: -10px;
+      top: -10px;
+      width: 32px;
+      height: 32px;  
+}
+.md-checkbox:active .md-checkmark:before {
+    background-color: rgba(var(--accent-color),0.24);
+    left: -10px;
+    top: -10px;
+    width: 32px;
+    height: 32px;  
+}
+.md-checkbox input:checked ~ .md-checkmark {
+    background-color: rgb(var(--accent-color));
+    border: 2px solid rgb(var(--accent-color));
+}
+.md-checkbox input:checked ~ .md-checkmark:after {
+    display: block;
+    left: 3px;
+    top: 0px;
+    width: 4px;
+    height: 8px;
+    border-color: white;
+}
+.md-checkbox .md-checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    transition: ease 0.2s all;
+    left: 5px;
+    top: 8px;
+    width: 0px;
+    height: 0px;
+    border: solid transparent;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.md-textbox {
+    border-radius: 4px 4px 0px 0px;
+    border: 0;
+    padding: 8px;
+    margin-inline-start: 4px;
+    margin-inline-end: 4px;
+    outline: 0;
+    font-size: 14px;
+    border-bottom: 1px solid #dadce0;
+    width: calc(100% - 16px);
+}
+.md-textbox:placeholder {
+    color: #5f6368; 
+}
+.md-textboxunder {
+    margin-inline-start: calc(50% + 4px);
+    margin-inline-end: calc(50% + 4px);
+    display: block;
+    margin-top: -1px;
+    background-color: transparent;
+    width: 0px;
+    height: 2px;
+    transition: ease 0.3s all;
+    border-radius: 2px 2px 0 0;
+}
+.md-textbox:focus ~ .md-textboxunder {
+    margin-inline-start: 4px;
+    margin-inline-end: 4px;
+    width: 100%;
+    background-color: rgb(var(--accent-color));
+    transform: translateZ(1px);
+}
+.md-select {
+    margin-inline-start: 4px;
+    margin-inline-end: 4px;
+    border-radius: 4px;
+    border: 1px solid #dadce0;
+    outline: 0;
+    padding: 8px 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    transition: ease 0.2s all;
+}
+.md-select:hover {
+    background-color: rgba(95,99,104,0.04);
+}
+.md-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 256px;
+    height: 2px;
+    background: rgba(95,99,104,0.32);
+    outline: none;
+    border-radius: 1px;
+}
+.md-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: rgb(var(--accent-color));
+    cursor: pointer;
+    border-radius: 50%;
+    transition: ease all 0.2s;
+}
+.md-slider::-webkit-slider-thumb:active {
+    width: 20px;
+    height: 20px;
+}
+.md-radiomark {
+    position: absolute;
+    top: 8px;
+    left: -1px;
+    height: 14px;
+    width: 14px;
+    background-color: transparent;
+    border: 2px solid #5f6368;
+    border-radius: 50%;
+    transition: ease 0.2s all;
+}
+.md-radiomark:before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    display: block;
+    left: -4px;
+    top: -4px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    transition: ease 0.2s all;
+}
+.md-checkbox:hover .md-radiomark:before {
+    background-color: rgba(var(--accent-color),0.12);
+    left: -9px;
+    top: -9px;
+    width: 32px;
+    height: 32px;  
+}
+.md-checkbox:active .md-radiomark:before {
+    background-color: rgba(var(--accent-color),0.24);
+    left: -9px;
+    top: -9px;
+    width: 32px;
+    height: 32px;  
+}
+.md-checkbox input:checked ~ .md-radiomark {
+    border: 2px solid rgb(var(--accent-color));
+}
+.md-checkbox input:checked ~ .md-radiomark:after {
+    background-color: rgb(var(--accent-color));
+    display: block;
+    left: 3px;
+    top: 3px;
+    width: 8px;
+    height: 8px;
+}
+.md-checkbox .md-radiomark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    transition: ease 0.2s all;
+    left: 7px;
+    top: 7px;
+    width: 0px;
+    height: 0px;
+    background-color: #5f6368;
+    border: 0px solid transparent;
+    border-radius: 50%;
+}
