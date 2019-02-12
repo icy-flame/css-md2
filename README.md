@@ -1,5 +1,4 @@
-# CSS-MD2
-![icon](https://github.com/icy-flame/css-md2/raw/master/css-md2.png)  
+# ![icon](https://github.com/icy-flame/css-md2/raw/master/css-md2.png)&nbsp;&nbsp;CSS-MD2
 Material Design 2 components in a light CSS file.
 ## Getting Started
 Download `css-md2.css` and add the following element to your HTML pages. (Change `href` as needed)  
