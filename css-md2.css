@@ -209,6 +209,7 @@ hr {
     padding-top: 8px;
     padding-bottom: 8px;
     font-size: 14px;
+    font-family: sans-serif;
 }
 .md-checkbox:after {
     height: 100px;
