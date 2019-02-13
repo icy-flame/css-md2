@@ -219,12 +219,6 @@ hr {
     align-items: center;
     font-family: sans-serif;
 }
-.md-checkbox:after {
-    height: 100px;
-    width: 100px;
-    background: rgb(var(--accent-color));
-    border: rgb(var(--accent-color));
-}
 .md-checkbox input {
     position: absolute;
     opacity: 0;
@@ -270,7 +264,8 @@ hr {
 }
 .md-checkbox input:checked ~ .md-checkmark {
     background-color: rgb(var(--accent-color));
-    border: 2px solid rgb(var(--accent-color));
+    border: 2px solid;
+    border-color: rgb(var(--accent-color));
 }
 .md-checkbox input:checked ~ .md-checkmark:after {
     top: 48%;
@@ -408,7 +403,8 @@ hr {
     margin-right: -5px;
 }
 .md-checkbox input:checked ~ .md-radiomark {
-    border: 2px solid rgb(var(--accent-color));
+    border: 2px solid;
+    border-color: rgb(var(--accent-color));
 }
 .md-checkbox input:checked ~ .md-radiomark:after {
     background-color: rgb(var(--accent-color));
