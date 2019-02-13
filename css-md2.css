@@ -358,10 +358,26 @@ hr {
     height: 16px;
     background: rgb(var(--accent-color));
     cursor: pointer;
+    border: 0;
     border-radius: 50%;
     transition: ease all 0.2s;
 }
 .md-slider::-webkit-slider-thumb:active {
+    width: 20px;
+    height: 20px;
+}
+.md-slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: rgb(var(--accent-color));
+    cursor: pointer;
+    border: 0;
+    border-radius: 50%;
+    transition: ease all 0.2s;
+}
+.md-slider::-moz-range-thumb:active {
     width: 20px;
     height: 20px;
 }
