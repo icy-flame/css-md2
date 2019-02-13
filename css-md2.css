@@ -320,6 +320,7 @@ hr {
     transform: translateZ(1px);
 }
 .md-select {
+    background-color: transparent;
     margin-inline-start: 4px;
     margin-inline-end: 4px;
     border-radius: 4px;
