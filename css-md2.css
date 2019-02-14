@@ -245,9 +245,11 @@ hr {
     height: 22px;
     border-radius: 50%;
     transition: ease 0.2s all;
+    background-color: #5f6368;
+    opacity: 0;
 }
 .md-checkbox:hover .md-checkmark:before {
-    background-color: rgba(var(--accent-color),0.12);
+    opacity: 0.12;
     margin-left: -10px;
     margin-top: -10px;
     width: 32px;
@@ -255,7 +257,7 @@ hr {
     margin-right: -5px;
 }
 .md-checkbox:active .md-checkmark:before {
-    background-color: rgba(var(--accent-color),0.24);
+    opacity: 0.24;
     margin-left: -10px;
     margin-top: -10px;
     width: 32px;
@@ -272,6 +274,9 @@ hr {
     width: 4px;
     height: 8px;
     border-color: white;
+}
+.md-checkbox input:checked ~ .md-checkmark:before {
+    background-color: rgb(var(--accent-color));
 }
 .md-checkbox .md-checkmark:after {
     position: absolute;
@@ -401,9 +406,11 @@ hr {
     height: 22px;
     border-radius: 50%;
     transition: ease 0.2s all;
+    background-color: #5f6368;
+    opacity: 0;
 }
 .md-checkbox:hover .md-radiomark:before {
-    background-color: rgba(var(--accent-color),0.12);
+    opacity: 0.12;
     margin-left: -9px;
     margin-top: -9px;
     width: 32px;
@@ -411,7 +418,7 @@ hr {
     margin-right: -5px;
 }
 .md-checkbox:active .md-radiomark:before {
-    background-color: rgba(var(--accent-color),0.24);
+    opacity: 0.24;
     margin-left: -9px;
     margin-top: -9px;
     width: 32px;
@@ -429,6 +436,9 @@ hr {
     width: 8px;
     height: 8px;
 }
+.md-checkbox input:checked ~ .md-radiomark:before {
+    background-color: rgb(var(--accent-color));
+}
 .md-checkbox .md-radiomark:after {
     content: "";
     position: absolute;
@@ -444,4 +454,76 @@ hr {
     -webkit-transform: translate(0,-50%);
     -ms-transform: translate(0,-50%);
     transform: translate(0,-50%);
+}
+.md-switch {
+    position: relative;
+    display: inline-block;
+    margin-inline-start: 4px;
+    margin-inline-end: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 32px;
+    height: 14px;
+    border-radius: 7px;
+}
+.md-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.md-switchslider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #b5b7bb;
+    transition: ease all 0.2s;
+    border-radius: 7px;
+}
+.md-switchslider:after {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    left: -14px;
+    top: -13px;
+    border-radius: 50%;
+    transition: ease all 0.2s;
+    z-index: -1;
+    background-color: #5f6368;
+    opacity: 0;
+    transform: scale(0.75);
+}
+.md-switch:hover .md-switchslider:after {
+    opacity: 0.12;
+    transform: scale(1);
+}
+.md-switch:active .md-switchslider:after {
+    opacity: 0.24;
+    transform: scale(1);
+}
+.md-switchslider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: -4px;
+    top: -3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: ease all 0.2s;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12);
+}
+input:checked + .md-switchslider {
+    background-color: rgba(var(--accent-color), 0.4);
+}
+input:checked + .md-switchslider:before {
+    left: 16px;
+    background-color: rgb(var(--accent-color));
+}
+input:checked + .md-switchslider:after {
+    background-color: rgb(var(--accent-color));
+    left: 6px;
 }
