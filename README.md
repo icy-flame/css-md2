@@ -46,6 +46,10 @@ There are 6 styles of buttons without ripple effect.
 ```
 <label class="md-checkbox"><input type="radio" name="radio"><span class="md-radiomark"></span>Radio Button</label>
 ```
+### Switch
+```
+<label class="md-switch"><input type="checkbox"><span class="md-switchslider"></span></label>
+```
 ### Textbox
 ```
 <div style="width: 256px"><input type="text" placeholder="Textbox" class="md-textbox"><span class="md-textboxunder"></span></div>
