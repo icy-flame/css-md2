@@ -1,9 +1,9 @@
 # ![icon](https://github.com/icy-flame/css-md2/raw/master/css-md2.png)&nbsp;&nbsp;CSS-MD2
 Material Design 2 components in a light CSS file.
 ## Getting Started
-Download `css-md2-min.css` and add the following element to your HTML pages. (Change `href` as needed)  
+Download `css-md2.css` and add the following element to your HTML pages. (Change `href` as needed)  
 ```
-<link rel="stylesheet" type="text/css" href="./css-md2-min.css" />
+<link rel="stylesheet" type="text/css" href="./css-md2.css" />
 ```
 If you want to change the accent color, add the following code to your HTML pages and replace `26,115,232` with the RGB value you want.
 ```
