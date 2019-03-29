@@ -67,4 +67,4 @@ There are 6 styles of buttons without ripple effect.
 <input type="range" class="md-slider">
 ```
 ## Demo
-[CSS-MD2 Demo](https://icy-flame.github.io/css-md2)
+[CSS-MD2 Demo](https://icyflame.cn/css-md2)
